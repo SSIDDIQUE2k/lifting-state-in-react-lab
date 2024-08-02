@@ -1,16 +1,18 @@
 import React from 'react';
 import Ingredient from './ingredient.jsx'
 
-const IngredientList = ({ ingredients, addToBurger }) => {
+const IngredientList = ({  availableIngredients, addToBurger }) => {
   return (
     <ul>
-      {ingredients.map((ingredient) => (
+        
+   { availableIngredients.map((ingredient) => (
+
         <Ingredient
           key={ingredient.id}
           ingredient={ingredient}
           addToBurger={addToBurger}
         />
-      ))}
+      ))}  
     </ul>
   );
 };

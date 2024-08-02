@@ -12,7 +12,7 @@ const BurgerStack = ({ stack, removeFromBurger }) => {
         <Ingredient
           key={ingredient.id}
           ingredient={ingredient}
-          removeFromBurger={removeFromBurger}
+          removeFromBurger={() => removeFromBurger(ingredient)}
         />
       ))}
     </ul>

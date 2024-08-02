@@ -31,7 +31,7 @@ const App = () => {
   const removeFromBurger = (ingredient) => {
     const newStack = stack.filter(item => item !== ingredient);
     setStack(newStack);
-    console.log(newStack);
+
   }
 
   return (
